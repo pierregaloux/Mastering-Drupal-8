@@ -2,6 +2,14 @@
 
 ## For Complete Beginners to C# and Visual Studio
 
+## ⚠️ Important: Project Location
+
+**Note:** This C# project is located in the `MSFSSimConnectApp` folder within the Mastering-Drupal-8 repository. Don't worry - the project is completely self-contained and independent. Visual Studio will only load the C# project files when you open the solution.
+
+**Having trouble opening in Visual Studio?** See the detailed guide: **[HOW_TO_OPEN_IN_VS2022.md](HOW_TO_OPEN_IN_VS2022.md)**
+
+---
+
 ### Step 1: Install Visual Studio 2022
 
 1. Go to https://visualstudio.microsoft.com/downloads/
@@ -12,13 +20,21 @@
    - ✅ **.NET desktop development**
 5. Click Install and wait (can take 30-60 minutes)
 
-### Step 2: Open the Project
+### Step 2: Open the Project in Visual Studio 2022
+
+**Important:** You need to open the solution file from the `MSFSSimConnectApp` subfolder.
 
 1. Launch **Visual Studio 2022**
-2. Click **"Open a project or solution"**
-3. Navigate to where you downloaded/cloned this repository
-4. Go into the `MSFSSimConnectApp` folder
-5. Double-click **MSFSSimConnectWebAPI.csproj**
+2. Click **"Open a project or solution"** (or File → Open → Project/Solution)
+3. Navigate to where you cloned the repository
+   - Example: `C:\Users\YourName\Documents\GitHub\Mastering-Drupal-8\`
+4. **Open the `MSFSSimConnectApp` folder** (this is crucial!)
+5. Select **MSFSSimConnectWebAPI.sln** (the solution file, not .csproj)
+6. Click **Open**
+
+**Visual Studio will now load only the C# project**, ignoring any Drupal files in the parent directory.
+
+**Still having trouble?** See the detailed guide: [HOW_TO_OPEN_IN_VS2022.md](HOW_TO_OPEN_IN_VS2022.md) for alternative methods.
 
 ### Step 3: Build the Project
 

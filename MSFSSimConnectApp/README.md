@@ -1,5 +1,17 @@
 # MSFS SimConnect Web API - Beginner's Guide
 
+## ⚠️ Opening in Visual Studio 2022
+
+**Important:** This project is in a subdirectory. To open in Visual Studio 2022:
+
+1. File → Open → Project/Solution
+2. Navigate to the `MSFSSimConnectApp` folder
+3. Open `MSFSSimConnectWebAPI.sln`
+
+**See detailed instructions:** [HOW_TO_OPEN_IN_VS2022.md](HOW_TO_OPEN_IN_VS2022.md)
+
+---
+
 ## 📋 Overview
 
 This is a C# .NET 8.0 web application that connects to Microsoft Flight Simulator (MSFS) using SimConnect to read and write flight data. The data is displayed on a web page that you can access from your tablet or any device on your local network.
