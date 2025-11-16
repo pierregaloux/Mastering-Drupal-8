@@ -1,0 +1,6 @@
+@MSFSSimConnectWebAPI_HostAddress = http://localhost:5204
+
+GET {{MSFSSimConnectWebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
