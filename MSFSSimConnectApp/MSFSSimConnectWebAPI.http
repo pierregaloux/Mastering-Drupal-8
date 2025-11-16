@@ -1,0 +1,73 @@
+@MSFSSimConnectWebAPI_HostAddress = http://localhost:5000
+
+### Get Connection Status
+GET {{MSFSSimConnectWebAPI_HostAddress}}/api/connection/status
+Accept: application/json
+
+###
+
+### Connect to SimConnect
+POST {{MSFSSimConnectWebAPI_HostAddress}}/api/connection/connect
+Accept: application/json
+
+###
+
+### Disconnect from SimConnect
+POST {{MSFSSimConnectWebAPI_HostAddress}}/api/connection/disconnect
+Accept: application/json
+
+###
+
+### Get Current Flight Data
+GET {{MSFSSimConnectWebAPI_HostAddress}}/api/flight/data
+Accept: application/json
+
+###
+
+### Send Command - Example: Set Heading Bug to 180 degrees
+POST {{MSFSSimConnectWebAPI_HostAddress}}/api/flight/command
+Content-Type: application/json
+
+{
+  "variableName": "HEADING_BUG_SET",
+  "value": 180,
+  "unit": "Degrees"
+}
+
+###
+
+### Send Command - Example: Turn Autopilot ON
+POST {{MSFSSimConnectWebAPI_HostAddress}}/api/flight/command
+Content-Type: application/json
+
+{
+  "variableName": "AUTOPILOT_MASTER",
+  "value": 1,
+  "unit": "Bool"
+}
+
+###
+
+### Send Command - Example: Turn Autopilot OFF
+POST {{MSFSSimConnectWebAPI_HostAddress}}/api/flight/command
+Content-Type: application/json
+
+{
+  "variableName": "AUTOPILOT_MASTER",
+  "value": 0,
+  "unit": "Bool"
+}
+
+###
+
+### Send Command - Example: Set Altitude Hold to 10000 feet
+POST {{MSFSSimConnectWebAPI_HostAddress}}/api/flight/command
+Content-Type: application/json
+
+{
+  "variableName": "AUTOPILOT_ALTITUDE_LOCK_VAR",
+  "value": 10000,
+  "unit": "Feet"
+}
+
+###
